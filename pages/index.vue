@@ -1,3 +1,7 @@
 <template>
-  <h1>Index page</h1>
+  <main>
+    <article class="prose p-16 max-w-3xl m-auto">
+      <ContentDoc />
+    </article>
+  </main>
 </template>

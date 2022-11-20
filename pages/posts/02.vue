@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <!-- This page correctly has only one single root element -->
-    <p>Post 02 content</p>
-  </div>
+  <main>
+    <article class="prose p-16 max-w-3xl m-auto">
+      <ContentDoc />
+    </article>
+  </main>
 </template>
