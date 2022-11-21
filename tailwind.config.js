@@ -21,5 +21,10 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    // https://github.com/tailwindlabs/tailwindcss-forms
+    require('@tailwindcss/forms'),
+    // https://github.com/tailwindlabs/tailwindcss-aspect-ratio
+  ],
 }
