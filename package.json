@@ -15,5 +15,9 @@
     "nuxt": "3.0.0",
     "postcss": "^8.4.19",
     "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "@hyjiacan/vue-slideout": "^3.0.1",
+    "swiper": "^8.4.5"
   }
 }
