@@ -8,12 +8,12 @@
     :modules="modules"
     class="home-swiper"
   >
-    <swiper-slide><img src="https://via.placeholder.com/1920x1080/09f.png/fff?text=Slide+1" /></swiper-slide>
-    <swiper-slide><img src="https://via.placeholder.com/1920x1080/6f9ddf.png/fff?text=Slide+2" /></swiper-slide>
-    <swiper-slide><img src="https://via.placeholder.com/1920x1080/95a3be.png/fff?text=Slide+3" /></swiper-slide>
-    <swiper-slide><img src="https://via.placeholder.com/1920x1080/ada89e.png/fff?text=Slide+4" /></swiper-slide>
-    <swiper-slide><img src="https://via.placeholder.com/1920x1080/bfaf7c.png/fff?text=Slide+5" /></swiper-slide>
-    <swiper-slide><img src="https://via.placeholder.com/1920x1080/d9bc26.png/fff?text=Slide+6" /></swiper-slide>
+    <swiper-slide><nuxt-img src="/img/001.png" /></swiper-slide>
+    <swiper-slide><nuxt-img src="/img/002.png" /></swiper-slide>
+    <swiper-slide><nuxt-img src="/img/003.png" /></swiper-slide>
+    <swiper-slide><nuxt-img src="/img/004.png" /></swiper-slide>
+    <swiper-slide><nuxt-img src="/img/005.png" /></swiper-slide>
+    <swiper-slide><nuxt-img src="/img/006.png" /></swiper-slide>
   </swiper>
 </template>
 <script>
