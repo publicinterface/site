@@ -20,6 +20,9 @@ export default defineNuxtConfig({
   content: {
     // https://content.nuxtjs.org/api/configuration
   },
+  image: {
+    dir: 'public/img',
+  },
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
