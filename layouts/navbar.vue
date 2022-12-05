@@ -2,21 +2,32 @@
   <header id="header">
     <div class="container-fluid">
       <div class="l">
-        <NuxtLink to="/" @click='menuOpen = false'>Public Interface</NuxtLink>
+        <NuxtLink to="/" @click='menuOpen = false' :class="{ white: !black }">Public Interface</NuxtLink>
       </div>
       <div class="c">
-        <div class="anchor">{{menuOpen}}</div>
+        <div class="anchor">{{menuOpen}}—{{black}}—{{wasBlack}}</div>
       </div>
       <div class="r">
-        <a href="#" class="toggle" @click="menuOpen = !menuOpen"></a>
+        <a href="#" class="toggle" @click="menuOpen = !menuOpen" :class="{ white: !black }">Menu</a>
       </div>
     </div>
   </header>
 </template>
 <script setup>
+import {ref, watch} from "vue"
   const menuOpen = useState('menuOpen', () => false)
+  const black = useState('black', () => true)
+  const wasBlack = useState('wasBlack', () => true)
+  
+  const isOpen = ref(menuOpen)
+  watch(menuOpen, ()=>{
+    console.log('menu toggled')
+  })
+  // if nav is open, black = false
+  // if nav is closed, black is wasBlack... 
 </script>
 <style>
+
 #header {
   position: fixed;
   top: 0;
@@ -32,10 +43,7 @@
 }
 
 .toggle {
-  width: 24px;
-  height: 24px;
   display: block;
-  background: green;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -60,4 +68,9 @@
   justify-content: flex-end;
   align-items: center;
 }
+
+#header .white {
+  color: #FFF;
+}
+
 </style>

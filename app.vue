@@ -11,10 +11,7 @@
       <div class="overlay-content">
         <ul @click='menuOpen = !menuOpen'>
           <li>
-            <NuxtLink to="/">Home</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/swiper">Swiper</NuxtLink>
+            <NuxtLink to="/" @click="black = !black">Home</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/about">About</NuxtLink>
@@ -31,7 +28,7 @@
   </div>
 </template>
 <script setup>
-  const black = useState('black', () => false)
+  const black = useState('black');
   const menuOpen = useState("menuOpen");
 </script>
 <style>
