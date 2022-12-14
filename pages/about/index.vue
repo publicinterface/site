@@ -40,7 +40,7 @@ export default {
           this.articles = []
           return
         }
-        this.articles = await queryContent('articles').find()
+        this.articles = await queryContent('posts').where({ title: { $eq: searchQuery } }).find()
       }
     }
   }

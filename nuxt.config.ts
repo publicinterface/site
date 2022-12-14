@@ -8,9 +8,12 @@ export default defineNuxtConfig({
         {name: 'description', content: 'An artist-run centre that interfaces with the public'},
         {name: 'author', content: 'tryl.es'}
       ],
-      // link: [
-      //   {rel: 'stylesheet', href: 'some-link.com'}
-      // ]
+      link: [
+        {
+          href: 'https://fonts.googleapis.com/css2?family=Helvetica:wght@100',
+          rel: 'stylesheet',
+        },
+      ]
     }
   },
   modules: [

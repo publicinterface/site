@@ -14,6 +14,9 @@
             <NuxtLink to="/" @click="black = !black">Home</NuxtLink>
           </li>
           <li>
+            <NuxtLink to="/projects">Projects</NuxtLink>
+          </li>
+          <li>
             <NuxtLink to="/about">About</NuxtLink>
           </li>
           <li>
@@ -44,10 +47,10 @@
 /* overlay nav */
 .overlay {
   height: 100%;
-  width: 0;
+  width: 100%;
   position: fixed;
   z-index: 100;
-  right: 0;
+  right: -100%;
   top: 0;
   background-color: #052897;
   overflow-x: hidden;
@@ -57,6 +60,7 @@
 
 .overlay.opened {
   width: 100%;
+  right: 0;
 }
 
 .overlay-content {

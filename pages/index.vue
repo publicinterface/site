@@ -16,6 +16,7 @@
         <p>Some text about the project</p>
       </header>
     </swiper-slide>
+
     <swiper-slide :style="{'background-image': 'url(https://via.placeholder.com/1920x1080/6f9ddf.png/fff?text=Slide+2', 'background-position': '50% 50%'}">
       <header class="homepage-header">
         <ul class="caps homepage-article"><li>PROGRAM</li><li>Sunday, Dec 11, 2022</li></ul>
@@ -23,6 +24,7 @@
         <p>Some text about the project</p>
       </header>
     </swiper-slide>
+
     <swiper-slide :style="{'background-image': 'url(https://via.placeholder.com/1920x1080/95a3be.png/fff?text=Slide+3', 'background-position': '50% 50%'}">
       <header class="homepage-header">
         <ul class="caps homepage-article"><li>PROGRAM</li><li>Sunday, Dec 11, 2022</li></ul>
@@ -30,6 +32,7 @@
         <p>Some text about the project</p>
       </header>
     </swiper-slide>
+
     <swiper-slide :style="{'background-image': 'url(https://via.placeholder.com/1920x1080/ada89e.png/fff?text=Slide+4', 'background-position': '50% 50%'}">
       <header class="homepage-header">
         <ul class="caps homepage-article"><li>PROGRAM</li><li>Sunday, Dec 11, 2022</li></ul>
@@ -37,6 +40,7 @@
         <p>Some text about the project</p>
       </header>
     </swiper-slide>
+
     <swiper-slide :style="{'background-image': 'url(https://via.placeholder.com/1920x1080/bfaf7c.png/fff?text=Slide+5', 'background-position': '50% 50%'}">
       <header class="homepage-header">
         <ul class="caps homepage-article"><li>PROGRAM</li><li>Sunday, Dec 11, 2022</li></ul>
@@ -44,6 +48,7 @@
         <p>Some text about the project</p>
       </header>
     </swiper-slide>
+
     <swiper-slide :style="{'background-image': 'url(https://via.placeholder.com/1920x1080/d9bc26.png/fff?text=Slide+6', 'background-position': '50% 50%'}">
       <header class="homepage-header">
         <ul class="caps homepage-article"><li>PROGRAM</li><li>Sunday, Dec 11, 2022</li></ul>
@@ -52,6 +57,7 @@
       </header>
     </swiper-slide>
   </swiper>
+  
 </template>
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
