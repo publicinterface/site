@@ -11,19 +11,10 @@
       <div class="overlay-content">
         <ul @click='menuOpen = !menuOpen'>
           <li>
-            <NuxtLink to="/" @click="black = !black">Home</NuxtLink>
-          </li>
-          <li>
             <NuxtLink to="/projects">Projects</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/about">About</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/posts/01">Post 01</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/posts/02">Post 02</NuxtLink>
           </li>
         </ul>
       </div>
@@ -52,7 +43,7 @@
   z-index: 100;
   right: -100%;
   top: 0;
-  background-color: #052897;
+  background-color: #000;
   overflow-x: hidden;
   overflow-y: scroll;
   transition: 0.5s;

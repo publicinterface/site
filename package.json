@@ -18,7 +18,7 @@
     "tailwindcss": "^3.2.4"
   },
   "dependencies": {
-    "@hyjiacan/vue-slideout": "^3.0.1",
+    "flickity": "^3.0.0",
     "swiper": "^8.4.5"
   }
 }

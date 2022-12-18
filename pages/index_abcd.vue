@@ -8,7 +8,7 @@
     :modules="modules"
     class="home-swiper"
   >
-  
+    <!-- :style="[page.acf.background_image ? { 'background-image': 'url(' + page.acf.background_image + ')' } : {'background': '#000'}, {'opacity': itemOpacity}]" -->
     <swiper-slide :style="{'background-image': 'url(https://via.placeholder.com/1920x1080/09f.png/fff?text=Slide+1', 'background-position': '50% 50%'}">
       <header class="homepage-header">
         <ul class="caps homepage-article"><li>PROGRAM</li><li>Sunday, Dec 11, 2022</li></ul>
@@ -56,7 +56,6 @@
         <p>Some text about the project</p>
       </header>
     </swiper-slide>
-
   </swiper>
   
 </template>

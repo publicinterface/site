@@ -18,7 +18,8 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    '@nuxt/image-edge'
+    '@nuxt/image-edge',
+    // '@pinia/nuxt'
   ],
   content: {
     // https://content.nuxtjs.org/api/configuration

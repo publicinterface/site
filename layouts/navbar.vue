@@ -5,26 +5,52 @@
         <NuxtLink to="/" @click='menuOpen = false' :class="{ white: !black }">Public Interface</NuxtLink>
       </div>
       <div class="c">
-        <div class="anchor">{{menuOpen}}—{{black}}—{{wasBlack}}</div>
+        <div class="anchor"><span :class="{ white: !black }">Search function here</span></div>
       </div>
       <div class="r">
-        <a href="#" class="toggle" @click="menuOpen = !menuOpen" :class="{ white: !black }">Menu</a>
+        <a href="#" class="toggle" @click="menuOpen = !menuOpen" :class="{ white: !black }"><span v-if="!menuOpen">Menu</span><span v-else>Close</span></a>
       </div>
     </div>
   </header>
 </template>
 <script setup>
-import {ref, watch} from "vue"
+  import {ref, watch} from "vue"
   const menuOpen = useState('menuOpen', () => false)
   const black = useState('black', () => true)
   const wasBlack = useState('wasBlack', () => true)
-  
   const isOpen = ref(menuOpen)
+  
   watch(menuOpen, ()=>{
-    console.log('menu toggled')
+    if(menuOpen.value) {
+      wasBlack.value = black.value
+      black.value = false
+    } else {
+      console.log('menu is closed')
+      black.value = wasBlack.value
+      // console.log(black.value)
+    }
+    // console.log('menu toggled')
+    // wasBlack.value = black
   })
+
+  // const question = ref('')
+  // const answer = ref('Questions usually contain a question mark. ;-)')
+
+  // // watch works directly on a ref
+  // watch(question, async (newQuestion, oldQuestion) => {
+  //   if (newQuestion.indexOf('?') > -1) {
+  //     answer.value = 'Thinking...'
+  //     try {
+  //       const res = await fetch('https://yesno.wtf/api')
+  //       answer.value = (await res.json()).answer
+  //     } catch (error) {
+  //       answer.value = 'Error! Could not reach the API. ' + error
+  //     }
+  //   }
+  // })
   // if nav is open, black = false
   // if nav is closed, black is wasBlack... 
+
 </script>
 <style>
 
