@@ -5,7 +5,11 @@
         <NuxtLink to="/" @click='menuOpen = false' :class="{ white: !black }">Public Interface</NuxtLink>
       </div>
       <div class="c">
-        <div class="anchor"><span :class="{ white: !black }">Search function here</span></div>
+        <div class="anchor">
+          <span :class="{ white: !black }">
+            <input type="text" class="appearance-none border-none border-transparent focus:border-transparent focus:ring-0 bg-transparent px-4 py-2 w-64 text-center" placeholder="">
+          </span>
+        </div>
       </div>
       <div class="r">
         <a href="#" class="toggle" @click="menuOpen = !menuOpen" :class="{ white: !black }"><span v-if="!menuOpen">Menu</span><span v-else>Close</span></a>
